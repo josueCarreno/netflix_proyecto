@@ -7,16 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <!-- Enzabezado -->
     <header class="w-full h-20 top-0 flex justify-between items-center px-[27px] xl:px-12 bg-transparent absolute z-10">
         <div class="flex justify-start items-center">
-            <img class="w-9 lg:hidden" src="images/227_Netflix_logo-512.webp" alt="">
-            <img class="hidden lg:block w-40" src="images/netflix-logo-text-emblem-31.png" alt="">
+            <img class="w-9 lg:hidden" src="./images/227_Netflix_logo-512.webp" alt="">
+            <img class="hidden lg:block w-40" src="./images/netflix-logo-text-emblem-31.png" alt="">
         </div>
         <div class="flex justify-between items-center gap-2.5">
             <div class="flex justify-between items-center py-[7px] pr-4 pl-3 md:py-0.5 md:px-3 md:w-[129px] border-[1px] border-[#5F5F5F] border-solid gap-2 rounded-full bg-[linear-gradient(rgba(33,33,33,0.4))]">
-                <img class="w-4" src="images/idioma.png" alt="">
+                <img class="w-4" src="./images/idioma.png" alt="">
                 <p class="m-0 text-[18px] text-white hidden sm:block font-semibold">Español</p>
-                <img class="w-2" src="images/caret-abajo.png" alt="">
+                <img class="w-2" src="./images/caret-abajo.png" alt="">
             </div>
             <button class="py-1.5 px-4 rounded-full bg-white hover:bg-[#BBB8B8] cursor-pointer text-black text-sm font-bold border-[1px] border-[#707070] border-solid">
                 Iniciar sesion                
@@ -24,54 +25,58 @@
         </div>
     </header>
 
+    <!-- Contenido Principal -->
     <main class="pt-20 px-6 sm:px-8 xl:px-[50px] w-full bg-[linear-gradient(to_bottom,black,#372324,#372324,#372324,#0F0F0F,#0F0F0F,#0F0F0F,#0F0F0F,#0F0F0F,#0F0F0F,#0F0F0F,#0F0F0F)]">
-        <div class="w-full min-h-[436px] lg:min-h-[480px] xl:min-h-[566px] bg-[linear-gradient(to_bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(53,53,53,0.9)),url('images/imagen_de_fondo.jpg')] bg-no-repeat bg-center bg-cover flex  items-end px-3 pb-10 sm:px-10 sm:pb-12 lg:px-20 lg:pb-20 xl:pb-[88px] rounded-tl-2xl rounded-tr-2xl text-white ">
+        <!-- Sección Imagen Principal -->
+        <section class="w-full min-h-[436px] lg:min-h-[480px] xl:min-h-[566px] bg-[linear-gradient(to_bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(53,53,53,0.9)),url('./images/imagen_de_fondo.jpg')] bg-no-repeat bg-center bg-cover flex  items-end px-3 pb-10 sm:px-10 sm:pb-12 lg:px-20 lg:pb-20 xl:pb-[88px] rounded-tl-2xl rounded-tr-2xl text-white ">
             <div class="w-full flex flex-col justify-center items-center text-center  text-white ">
                 <h1 class="mb-2 w-full max-w-[500px]"><span class=" text-[24px]/[40px] sm:text-[32px] lg:text-5xl xl:text-[56px] font-bold  leading-[125%] text-center"><span class="block">Películas y series</span> ilimitadas y mucho más</span></h1>
                 <p class="mb-6 font-semibold lg:text-[18px] xl:text-2xl">A partir de USD 3,99. Cancela cuando quieras.</p>
                 <h3 class="text-[14px] font-semibold lg:text-[16px] max-w-[580px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
                 <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-3.5 md:gap-2 w-full">
-                    <input class="w-full max-w-[358px] py-[11px] px-4 md:py-3.5 rounded-full border-[1px] border-[#5F5F5F] border-solid placeholder:text-[#B8B9BA] placeholder:font-bold bg-[linear-gradient(rgba(255,255,255,0.3))]" type="text" placeholder="Email">
+                    <input class="w-full md:max-w-[358px] py-[11px] px-4 md:py-3.5 rounded-full border-[1px] border-[#5F5F5F] border-solid placeholder:text-[#B8B9BA] placeholder:font-bold bg-[linear-gradient(rgba(255,255,255,0.3))]" type="text" placeholder="Email">
                     <button class=" w-full md:max-w-[215px] px-4 py-3 rounded-full bg-[#E50914] hover:bg-[#C11119] cursor-pointer text-white font-bold flex justify-center items-center gap-2">
                         <span class="text-lg font-bold sm:text-2xl">Comenzar  </span>       
-                        <img class="w-6" src="images/proximo.png" alt="">
+                        <img class="w-6" src="./images/proximo.png" alt="">
                     </button>
                 </div>
             </div>
-        </div>
-        <article class="mb-14 flex flex-col gap-4 lg:px-12 xl:px-[98px]">
+        </section>
+        <!-- Sección de Tendencias -->
+        <section class="mb-14 flex flex-col gap-4 lg:px-12 xl:px-[98px]">
             <h2 class="text-[20px] text-white font-bold mt-3 xl:text-[32px]">Tendencias</h2>
             <ul class="items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
                 <li class="w-[144px] h-[233.59px] py-[12.8px] pr-4 pl-6 lg:w-[168px] lg:h-[281.59px] xl:w-[172.59px] xl:h-[287.59px] cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-15px] xl:translate-x-[-20px] translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">1</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_1.webp" alt="">
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_1.webp" alt="">
                 </li>
                 <li class="h-[233.59px] py-[12.8px] w-[136px] px-4 lg:w-[160px] lg:h-[281.59px] xl:w-[163px] xl:h-[287.59px] cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-15px] lg:translate-x-[-18px] xl:translate-x-[-21px] 2xl:translate-x-[-26px] translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">2</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_2.webp" alt="">                    
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_2.webp" alt="">                    
                 </li>
                 <li class="h-[233.59px] py-[12.8px] w-[136px] px-4 lg:w-[160px] lg:h-[281.59px] xl:w-[163px] xl:h-[287.59px] hidden sm:inline cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-15px] lg:translate-x-[-18px] xl:translate-x-[-26px] translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">3</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_3.webp" alt="">
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_3.webp" alt="">
                 </li>
                 <li class="h-[233.59px] py-[12.8px] w-[136px] px-4 lg:w-[160px] lg:h-[281.59px] xl:w-[163px] xl:h-[287.59px] hidden sm:inline cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-15px] lg:translate-x-[-18px] xl:translate-x-[-26px] translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">4</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_4.webp" alt="">
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_4.webp" alt="">
                 </li>
                 <li class="h-[233.59px] py-[12.8px] w-[136px] px-4 lg:w-[160px] lg:h-[281.59px] xl:w-[163px] xl:h-[287.59px] hidden md:inline cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-15px] lg:translate-x-[-18px] xl:translate-x-[-26px] translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">5</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_5.webp" alt="">
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_5.webp" alt="">
                 </li>
                 <li class="h-[233.59px] py-[12.8px] w-[136px] px-4 lg:w-[160px] lg:h-[281.59px] xl:w-[163px] xl:h-[287.59px] hidden xl:inline cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-15px] xl:translate-x-[-26px] translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">6</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_6.webp" alt="">
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_6.webp" alt="">
                 </li>
                 <li class="h-[233.59px] py-[12.8px] w-[136px] px-4 lg:w-[160px] lg:h-[281.59px] xl:w-[163px] xl:h-[287.59px] hidden 2xl:inline cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out">
                     <span class="text-5xl lg:text-[64px] xl:text-7xl absolute translate-x-[-11px] 2xl:translate-x-[-21px]  translate-y-[10px] inline-block font-extrabold text-black [-webkit-text-stroke:2px_white]">7</span>
-                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="images/pelicula_7.webp" alt="">
+                    <img class="w-[104px] h-[208px] rounded-2xl lg:w-[128px] lg:h-[256px] xl:w-[131px] xl:h-[262px]" src="./images/pelicula_7.webp" alt="">
                 </li>
             </ul>
-        </article>
+        </section>
+        <!-- Sección más motivos para unirte -->
         <section class= "font-bold">
 
             <div class="w-full lg:px-12 mb-2.5 xl:px-[98px]">
@@ -105,6 +110,7 @@
                     </div>   
             </article>
         </section>
+        <!-- Sección Preguntas Frecuentes -->
         <section class=" flex flex-col gap-2 pb-10 lg:px-12  xl:px-[98px]">
                 <h2 class="text-[20px] text-white xl:text-[32px] font-bold pb-1">Preguntas Frecuentes</h2>
                 <details class="p-4 lg:p-6 bg-[#272727] hover:bg-[#3E3F3F] flex flex-col justify-center items-between list-none group hover:shadow-xl transition-shadow duration-300 text-[15px] lg:text-[18px] text-white font-bold  rounded-2xl">
@@ -168,6 +174,7 @@
                     </p>
                 </details>
         </section>
+        <!-- Sección Quieres ver Netflix -->
         <section>
             <div class="w-full flex justify-center items-center text-center">
                 <p class="text-white font-semibold text-center max-w-[580px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
@@ -184,6 +191,7 @@
         </section>
     </main>
 
+    <!-- Pie de pagina -->
     <footer class="px-[24px] md:px-8 lg:px-20 xl:px-[148px] pt-16 pb-24 bg-[#0F0F0F]">
         <div class="p-[3px] text-[#ffffffb3] mb-3.5">
             <p class="font-semibold leading-[18px]">¿Preguntas? Llama al <span class="underline decoration-1">1 (866) 972-8033 (USA)</span></p>
